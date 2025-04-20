@@ -21,7 +21,6 @@ html {
     justify-content: space-between;
     margin: 0;
     padding-inline: 56px;
-    border: 2px solid red;
 
 }
 
@@ -31,8 +30,6 @@ html {
 }
 
 ul {
-    border: 2px solid red;
-
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -52,7 +49,6 @@ a {
     color: #F9FAF8;
     padding: 56px;
     gap: 32px;
-    border: 2px solid red;
     flex-wrap: wrap ;
 }
 
@@ -61,15 +57,12 @@ a {
     flex-direction: column;
     justify-content: space-between;
     gap: 8px;  
-    border: 2px solid red;
+    margin-block: 0;
     flex: 1;
- 
 }
 
 .rigth-container {
-    border: 2px solid red;
     flex: 1;
-
 }
 
 .main-text {
@@ -81,6 +74,12 @@ a {
     /* text-align: left; */
     flex-grow: 1;
     flex-shrink: 1;
+    text-wrap: wrap;
+}
+
+.hero-button {
+    align-self: flex-start;
+    width: 120px;
 }
 
 button {
@@ -92,5 +91,39 @@ button {
     flex-grow: 0;
     padding: 5px;
     margin: 0px;
+
 }
+
+/*  information */
+
+.information {
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 56px;
+}
+
+.information .main-text {
+    font-size: xx-large;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.card img {
+    border: 2px solid #3882F6;
+    width: 20px;
+    border-radius: 5px;
+}
+
+
+
+
 
