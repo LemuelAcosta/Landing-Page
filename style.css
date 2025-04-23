@@ -18,7 +18,7 @@ html {
     display: flex;
     padding: 3px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     padding-inline: 56px;
 
@@ -44,25 +44,33 @@ a {
 .hero-section {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 56px;
     gap: 32px;
     flex-wrap: wrap ;
+    /* height: auto; */
 }
 
 .left-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;  
     margin-block: 0;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .rigth-container {
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 400px;
+}
+
+.rigth-container img {
+    /* max-height: 100%; */
+    object-fit: contain;
 }
 
 .main-text {
@@ -112,8 +120,13 @@ button {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border: 2px solid red;
+}
+
+.card-item {
     border: 2px solid red;
 }
 
